@@ -72,8 +72,11 @@ nav{
     /* width: 50%; */
     border-bottom: 3px solid #ffffff;
     right: 17px;
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 42px;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-top: 15px;
+    
 }
 section{
     /* overflow: hidden; */
@@ -114,8 +117,9 @@ section{
 
 /* FORM SETTINGS */
 .feedback{
-    width: 60%;
-
+    position: relative;
+    width: 55%;
+    right: 12px;
 }
 .feedback .window{
     width: 80%;
@@ -148,7 +152,7 @@ section{
 
 .feedback .content{
     display: flex;
-    background-color: #0f1013;
+    background-color: #1e1f24;
     width: 100%;
 }
 .feedback .content .image{
