@@ -19,3 +19,8 @@ const aboutUs = document.querySelector('.project')
 aboutUs.addEventListener('click', function(evt){
   window.location.href = "aboutUs.html";
 })
+const support = document.querySelector('.support')
+support.addEventListener('click', function(evt){
+  window.location.href = "support.html";
+})
+
