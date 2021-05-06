@@ -324,12 +324,12 @@ p{
     /* margin-right: 200px; */
 }
 .info_img:hover{
-    box-shadow: 14px 14px 10px 4px black;
+    box-shadow: 4px 4px 5px 4px black;
     cursor: pointer;
 }
 .info_text{
     position: relative;
-
+    text-shadow: 4px 4px 4px black;
     width: 100%;
     margin: 0;
     z-index: 7;
@@ -356,7 +356,7 @@ h4{
 }
 footer{
     width: 100%;
-    background: linear-gradient(#1c1d20, #121416);
+    background: linear-gradient(#141518, #121416);
     align-items: center;
     display: flex;
     padding-top: 20px;
@@ -367,7 +367,7 @@ footer{
     color: #fff;
 }
 .list{
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
     align-self: center;
