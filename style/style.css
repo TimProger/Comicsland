@@ -132,7 +132,7 @@ h2:hover{
 .block-comic{
     position: relative;
     transition: all 0.4s;
-    max-width: 50%;
+    width: 50%;
     height: 272px;
     border: none;
     display: flex;
