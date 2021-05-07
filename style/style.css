@@ -63,10 +63,6 @@ nav{
     cursor: pointer;
 }
 .btn{
-
-
-
-
     font-family: 'Spectral SC', serif;
     border: none; outline: none; 
     z-index: 1;
@@ -75,12 +71,10 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: #ffffff;
     font-size: 27px;
     width: 320px;
     height: 100%;
-    background: linear-gradient(#1e2024, #141518);
     cursor: pointer;
     transition-property: border-top, letter-spacing, color;
     transition-duration: 0.5s;

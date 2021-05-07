@@ -121,7 +121,6 @@ section{
     font-size: 27px;
     width: 320px;
     height: 100%;
-    background: linear-gradient(#1e2024, #141518);
     cursor: pointer;
     transition-property: border-top, letter-spacing, color;
     transition-duration: 0.5s;
@@ -273,7 +272,7 @@ section{
     position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
     right: 120px;
-    top: -80px;
+    top: -120px;
     height: 200px;
     width: 200px;
     border-radius: 50%;

@@ -100,7 +100,6 @@ section{
     font-size: 27px;
     width: 320px;
     height: 100%;
-    background: linear-gradient(#1e2024, #141518);
     cursor: pointer;
     transition-property: border-top, letter-spacing, color;
     transition-duration: 0.5s;
