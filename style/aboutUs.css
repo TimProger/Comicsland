@@ -1,6 +1,4 @@
-*{
-    
-}
+
 :root{
     --background-color-yellow: #FCF192;
     --background-color-yellowDarker: #ada12d;
@@ -106,22 +104,31 @@ section{
 }
 
 .back{
-    transition-property: border-top, letter-spacing, color;
-    transition-duration: 0.5s;
-    align-items: center;
-    background: linear-gradient(#1e2024, #141518);
 
-    color: #ffffff;
-    width: 320px;
-    font-size: 27px;
+
+
+
     font-family: 'Spectral SC', serif;
     border: none; outline: none; 
-    height: 100%;
-    cursor: pointer;
     z-index: 1;
 }
-.back:hover{
-    border-top: 6px solid var(--background-color-yellow);
+.back_href{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 27px;
+    width: 320px;
+    height: 100%;
+    background: linear-gradient(#1e2024, #141518);
+    cursor: pointer;
+    transition-property: border-top, letter-spacing, color;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+.back_href:hover{
+    border-top: 10px solid var(--background-color-yellow);
     letter-spacing: 4px;
     color: var(--background-color-yellow);
 
@@ -194,6 +201,17 @@ section{
         transform: translateY(-20px) translateX(10px);
     }
 }
+@keyframes animate3
+{
+    0%,100%
+    {
+        transform: translateY(-10px) translateX(30px);
+    }
+    50%
+    {
+        transform: translateY(10px) translateX(-30px);
+    }
+}
 .cicle2{
     position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
@@ -224,4 +242,43 @@ section{
     z-index: 2;
     animation: animate2 6s ease-in-out infinite;
 
+}
+.mini-cicle{
+    position: absolute;
+    background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
+    right: 120px;
+    top: 280px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    filter: blur(1px);
+    z-index: 3;
+
+    animation: animate3 3s ease-in-out infinite;
+}
+.mc1{
+    position: absolute;
+    background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
+    right: 120px;
+    top: 280px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    filter: blur(1px);
+    z-index: 3;
+
+    animation: animate3 3s ease-in-out infinite;
+}
+.mc2{
+    position: absolute;
+    background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
+    right: 120px;
+    top: -80px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    filter: blur(1px);
+    z-index: 3;
+
+    animation: animate3 3s ease-in-out infinite;
 }

@@ -32,6 +32,7 @@ body{
 }
 header{
     max-width: 100%;
+    overflow: hidden;
     height: 129px;
 }
 nav{
@@ -61,20 +62,31 @@ nav{
     font-size: 48px;
     cursor: pointer;
 }
-nav button{
-    transition: all 0.4s;
-    align-items: center;
-    background: linear-gradient(#1e2024, #141518);
+.btn{
 
-    color: #ffffff;
-    width: 320px;
-    font-size: 27px;
+
+
+
     font-family: 'Spectral SC', serif;
     border: none; outline: none; 
-    height: 100%;
-    cursor: pointer;
+    z-index: 1;
 }
-nav button:hover{
+.btn_href{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 27px;
+    width: 320px;
+    height: 100%;
+    background: linear-gradient(#1e2024, #141518);
+    cursor: pointer;
+    transition-property: border-top, letter-spacing, color;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+.btn_href:hover{
     border-top: 6px solid var(--background-color-yellow);
     letter-spacing: 4px;
     color: var(--background-color-yellow);
@@ -202,9 +214,7 @@ h3{
     width: 150px;
     height: 150px;
 }
-.comic-img-3{
-    /* transform: rotate(30deg); */
-}
+
 .main-text{
     display: flex;
     align-items: center;
