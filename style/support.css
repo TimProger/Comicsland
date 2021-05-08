@@ -71,7 +71,6 @@ nav{
     align-items: center;
     padding: 40px;
     /* width: 50%; */
-    border-bottom: 3px solid #ffffff;
     right: 17px;
     font-size: 42px;
     margin-bottom: 10px;
@@ -159,7 +158,9 @@ section{
 
 .feedback .content{
     display: flex;
-    background-color: #1e1f24;
+
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 .feedback .content .image{
@@ -174,11 +175,11 @@ section{
     overflow: visible;
 } */
 
-.feedback .content .frm form>*{
+.feedback .content .frm fieldset>*{
     margin: 5px 20px;
 }
 
-.feedback .content .frm form a{
+.feedback .content .frm fieldset a{
     color: white;
     font-size: 15px;
     text-decoration: none;
@@ -186,19 +187,22 @@ section{
 }
 .feedback .content .frm{
     width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.feedback .content .frm form .field{
+.feedback .content .frm fieldset .field{
     background-color: #1C1C1E;
     border: 2px solid var(--background-color-mainGradient);
     padding: 5px;
     color: white;
     border-radius: 4px;
 }
-.feedback .content .frm form .field:focus{
+.feedback .content .frm fieldset .field:focus{
     box-shadow: 0 0 6px   var(--background-color-mainColor);
     outline: none;
 }
-.feedback .content .frm form{
+.feedback .content .frm fieldset{
     display: flex;
     flex-direction: column;
     margin: 70px 0;
@@ -207,10 +211,8 @@ section{
 .chb_container{
     display: flex;
     flex-direction: row;
-    padding: 10px;
 }
 .chb_container label{
-    margin: 1px;
     cursor: pointer;
 }
 .feedback .content .frm button{
@@ -221,6 +223,9 @@ section{
     border-radius: 5px;
     width: 100px;
     cursor: pointer;
+    align-self: center;
 }
-
+legend{
+    font-size: 25.8px;
+}
 /* FORM SETTINGS END */
