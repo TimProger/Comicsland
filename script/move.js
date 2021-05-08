@@ -17,6 +17,8 @@ function moving (object, speed) {
 function moveAll (object) {
 	moving($(object)[0],21);
 	moving($(object)[1],21);
+	moving($(object)[2],81);
+	moving($(object)[3],81);
 
 }
 // /////////////////////////////////////////////////////////////

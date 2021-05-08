@@ -81,6 +81,7 @@ nav{
 }
 section{
     overflow: hidden;
+
 }
 .back{
 
@@ -137,6 +138,13 @@ section{
     justify-content: center;
     flex-direction: column;
     z-index: 1;
+}
+.background-image{
+    position: absolute;
+    top: 380px;
+    width: 80%;
+    opacity: 20%;
+    left: 150px;
 }
 .images{
     padding: 6%;
