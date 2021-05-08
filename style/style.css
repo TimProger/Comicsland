@@ -357,3 +357,19 @@ footer{
     font-size: 17px;
     color: var(--background-color-yellow);
 }
+.beta-block{
+    transition: all 0.3s;
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    background: linear-gradient(#1c1d20, #121416);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    border-radius: 1px 20px 20px 1px;
+    z-index: 10;
+    left: 0px;
+    top: 150px;
+}

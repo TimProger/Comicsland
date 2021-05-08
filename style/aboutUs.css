@@ -4,6 +4,7 @@
     --background-color-yellowDarker: #ada12d;
 }
 body{
+    height: 860px;
     margin: 0;
     padding: 0;
     font-family: 'Spectral SC', serif;
@@ -29,7 +30,7 @@ body{
     flex-direction: column;
     width: 100%;
 
-    background-color: #202227;
+    background-color: #375ec2;
     /* border-left: 5px solid white;
     border-right: 5px solid white; */
 
@@ -151,15 +152,15 @@ section{
     position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
     top: 400px;
-    right: 10px;
+    right: 120px;
     opacity: 80%;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    filter: blur(1px);
+    filter: blur(4px);
     z-index: 3;
 
-    animation: animate 6s ease-in-out infinite;
+    /* animation: animate 6s ease-in-out infinite; */
 
 }
 .cicle::after{
@@ -167,7 +168,6 @@ section{
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
 
     top: 400px;
-    right: -160px;
 
     height: 400px;
     width: 400px;
@@ -175,7 +175,7 @@ section{
     filter: blur(1px);
     z-index: 3;
     transition: all 2s;
-    animation: animate 6s ease-in-out infinite;
+    /* animation: animate 6s ease-in-out infinite; */
 
 }
 @keyframes animate
@@ -200,29 +200,20 @@ section{
         transform: translateY(-20px) translateX(10px);
     }
 }
-@keyframes animate3
-{
-    0%,100%
-    {
-        transform: translateY(-10px) translateX(30px);
-    }
-    50%
-    {
-        transform: translateY(10px) translateX(-30px);
-    }
-}
+
 .cicle2{
     position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
 
     top: 270px;
-    left: 10px;
+    left: 60px;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    filter: blur(1px);
+    filter: blur(4px);
+
     z-index: 2;
-    animation: animate2 6s ease-in-out infinite;
+    /* animation: animate2 6s ease-in-out infinite; */
     opacity: 80%;
 
 }
@@ -239,45 +230,27 @@ section{
     border-radius: 50%;
     filter: blur(1px);
     z-index: 2;
-    animation: animate2 6s ease-in-out infinite;
+    /* animation: animate2 6s ease-in-out infinite; */
 
 }
-.mini-cicle{
+/* 
+.banner{
     position: absolute;
-    background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
-    right: 120px;
-    top: 280px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    filter: blur(1px);
-    z-index: 3;
-
-    animation: animate3 3s ease-in-out infinite;
+    height: 500px;
+    width: 500px;
+    background-color: blueviolet;
+    z-index: 12;
 }
-.mc1{
+.img{
     position: absolute;
-    background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
-    right: 120px;
-    top: 280px;
-    height: 200px;
-    width: 200px;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     border-radius: 50%;
-    filter: blur(1px);
-    z-index: 3;
-
-    animation: animate3 3s ease-in-out infinite;
-}
-.mc2{
-    position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
-    right: 120px;
-    top: -120px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    filter: blur(1px);
-    z-index: 3;
+    
 
-    animation: animate3 3s ease-in-out infinite;
-}
+} */
