@@ -380,10 +380,19 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
     color: #fff;
     text-align: center;
     border-radius: 1px 20px 20px 1px;
     z-index: 10;
     left: 0px;
     top: 100px;
+    overflow: hidden;
+}
+.beta-block button{
+    height: 100%;
+    background: linear-gradient(#6b3434, #3a1818);
+    border: none; outline: none;
+    cursor: pointer;
+    color: #fff;
 }
