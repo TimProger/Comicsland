@@ -138,7 +138,7 @@ h2:hover{
 .block-comic{
     position: relative;
     transition: all 0.4s;
-    width: 50%;
+    width: 80%;
     height: 272px;
     border: none;
     display: flex;
@@ -154,6 +154,16 @@ h2:hover{
 
 
     transition-timing-function: ease-in-out;
+}
+.type-block-1 a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.type-block-2 a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
 }
 .rus-comics{
     border-radius: 89% 11% 87% 13% / 14% 87% 13% 86%;
@@ -348,6 +358,10 @@ footer{
     justify-content: space-around;
 
     list-style: none;
+}
+.uls a{
+    text-decoration: none;
+    color: #fff;
 }
 .lis{
     transition: all 0.5s;

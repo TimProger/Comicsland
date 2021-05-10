@@ -141,13 +141,14 @@ h1{
 }
 .cicle{
     position: absolute;
-    background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
+    background: url(../images/hero.png) no-repeat;
+    background-size: 324px;
+    background-position: center;
     top: 400px;
-    right: 120px;
+    right: 90px;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    filter: blur(3px);
     z-index: 3;
 
     /* animation: animate 6s ease-in-out infinite; */
@@ -181,13 +182,14 @@ h1{
 .cicle2{
     position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
-
+    background: url(../images/japaneese.png) no-repeat;
+    background-size: 324px;
+    background-position: center;
     top: 300px;
     left: 40px;
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    filter: blur(3px);
 
     z-index: 3;
     /* animation: animate2 6s ease-in-out infinite; */
@@ -196,14 +198,15 @@ h1{
 .cicle3{
     position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
-
+    background: url(../images/ostalnoe.png) no-repeat;
+    background-size: 80px;
+    background-position: center;
     top: 310px;
-    right: 440px;
+    right: 420px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    filter: blur(4px);
-
+    opacity: 30%;
     z-index: 3;
     /* animation: animate2 6s ease-in-out infinite; */
 
@@ -211,14 +214,15 @@ h1{
 .cicle4{
     position: absolute;
     background: linear-gradient(var(--background-color-yellow), var(--background-color-yellowDarker));
-
+    background: url(../images/rus.png) no-repeat;
+    background-size: 80px;
+    background-position: center;
     top: 250px;
     left: 450px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    filter: blur(4px);
-
+    opacity: 30%;
     z-index: 2;
     /* animation: animate2 6s ease-in-out infinite; */
 
