@@ -195,12 +195,10 @@ h3{
 
 }
 .hero-comics:hover, .japan-comics:hover{
-    transform: rotate(-2deg) scale(1.1);
-
+    transform: rotate(-2deg) scale(1.072);
 }
 .other-comics:hover, .rus-comics:hover{
-    transform: rotate(2deg) scale(1.1);
-
+    transform: rotate(2deg) scale(1.072);
 }
 .block-content{
     display: flex;
@@ -212,7 +210,6 @@ h3{
 .comic-p{
     margin: 0;
     font-size: 28px;
-
 }
 .comic-img{
     width: 150px;
@@ -225,7 +222,6 @@ h3{
     justify-content: center;
     flex-direction: column;
     background: linear-gradient(#282a30, #16181b);
-
     color: #ffffff;
     font-size: 20px;
     width: 100%;
@@ -391,6 +387,7 @@ footer{
 }
 .beta-block button{
     height: 100%;
+    width: 12%;
     background: linear-gradient(#6b3434, #3a1818);
     border: none; outline: none;
     cursor: pointer;
