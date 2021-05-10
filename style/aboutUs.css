@@ -80,6 +80,7 @@ section{
     font-size: 48px;
     cursor: pointer;
     z-index: 3;
+    text-decoration: none;
 
 }
 .about{

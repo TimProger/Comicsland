@@ -66,6 +66,7 @@ nav{
     margin: 0;
     margin-left: 0;
     font-size: 48px;
+    text-decoration: none;
     cursor: pointer;
 }
 .about{

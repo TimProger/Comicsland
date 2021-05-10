@@ -61,6 +61,7 @@ nav{
     margin-left: 0;
     font-size: 48px;
     cursor: pointer;
+    text-decoration: none;
 }
 .btn{
     font-family: 'Spectral SC', serif;
