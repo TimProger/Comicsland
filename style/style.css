@@ -395,7 +395,7 @@ footer{
 }
 .beta-block{
     transition: all 0.3s;
-    height: 100px;
+    height: 70px;
     width: 300px;
     position: absolute;
     background: linear-gradient(#303135, #121416);
