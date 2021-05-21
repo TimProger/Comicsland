@@ -429,6 +429,37 @@ footer{
 .inp-search{
     height: 40%;
     width: 60%;
-    border-radius: 20px;
-    background-color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    background: linear-gradient(#303338, #15171a);
+
+    color: #fff;
+
+}
+.inp-submit{
+    height: 40%;
+    border: none;
+    outline: none;
+    background: linear-gradient(#303338, #15171a);
+    
+    font-size: 20px;
+
+    border-left: 1px solid #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.inp-submit:hover{
+    border-color: var(--background-color-yellow);
+    color: var(--background-color-yellow);
+
 }
