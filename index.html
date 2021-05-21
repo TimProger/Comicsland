@@ -8,6 +8,7 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bot.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -15,11 +16,40 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="show-bot"></div>
+
+    <form action="" class="bot-form">
+        <div class="close-bot"></div>
+
+        <div class="bot-header">
+            <div class="bot-answer">
+                <div class="bot-name1">Вам отвечает... </div>
+                <div class="bot-name2">Бот Лина</div>
+            </div>
+            <div class="bot-img"></div>
+        </div>
+        <div class="bot-content">
+            <div class="bot-message">Дарова, я Лина.</div>
+            <div class="bot-message">Отправь одну из нижеперечислинных команд, что бы я смог тебе помочь! <br> <span
+                    class="bot-help" onclick="createAnswer(answerDed1)">Дед</span> | <span class="bot-help">Омегавёрс</span> | <span
+                    class="bot-help">Арты</span>;</div>
+        </div>
+        <div class="bot-inputarea">
+            <input class="bot-input" type="text" placeholder="Напишите что-нибудь">
+            <div class="bot-btn" type="button"></div>
+
+        </div>
+    </form>
+
     <div class="beta-block"><button class="beta-button">X</button>Сайт находится в бете, приносим извинения за дискомфорт</div>
     <div class="addapt">
     <header>
         <nav>
             <a href="index.html" class="main-header">Комиксы.Hub</a>
+            <div class="search">
+                <input type="search">
+                <input type="submit">
+            </div>
             <div class="container">
                 <a class="btn_href" href="aboutUs.html">
                     <div class="project btn">О проекте</div>
@@ -136,6 +166,7 @@
     <script src="script/swiper.js"></script>
     <script src="script/script.js"></script>
     <script src="script/functions.js"></script>
+    <script src="script/bot.js"></script>
 
 </body>
 </html>
