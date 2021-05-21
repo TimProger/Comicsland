@@ -1,4 +1,10 @@
+const beta_block = document.querySelector('.beta-block')
 const beta_button = document.querySelector('.beta-button')
+window.addEventListener('load', function(evt){
+    setTimeout(function(){
+        beta_block.style.left = '0'
+    }, 200)
+})
 const close = (evt) => {
     window.removeEventListener('scroll', scroll1)
     var value = -300;

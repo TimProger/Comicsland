@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/support.css">
+    <link rel="stylesheet" href="style/bot.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
 
     <title>Document</title>
 </head>
 <body>
+    <div class="show-bot"></div>
+
+    <form action="" class="bot-form">
+        <div class="close-bot"></div>
+
+        <div class="bot-header">
+            <div class="bot-answer">
+                <div class="bot-name1">Вам отвечает... </div>
+                <div class="bot-name2">Бот Лина</div>
+            </div>
+            <div class="bot-img"></div>
+        </div>
+        <div class="bot-content">
+            <div class="bot-message">Дарова, я Лина.</div>
+            <div class="bot-message">Отправь одну из нижеперечислинных команд, что бы я смог тебе помочь! <br> <span
+                    class="bot-help" onclick="createAnswer(answerDed1)">Дед</span> | <span class="bot-help">Омегавёрс</span> | <span
+                    class="bot-help">Арты</span>;</div>
+        </div>
+        <div class="bot-inputarea">
+            <input class="bot-input" type="text" placeholder="Напишите что-нибудь">
+            <div class="bot-btn" type="button"></div>
+
+        </div>
+    </form>
     <div class="addapt">
         <header>
             <nav>
@@ -59,5 +85,7 @@
     
         </div>
 <script src="script/support.js"></script>
+<script src="script/bot.js"></script>
+
 </body>
 </html>

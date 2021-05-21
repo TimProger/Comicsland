@@ -5,12 +5,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="style/bot.css">
         <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/aboutUs.css">
     
         <title>Document</title>
     </head>
 <body>
+    <div class="show-bot"></div>
+
+    <form action="" class="bot-form">
+        <div class="close-bot"></div>
+
+        <div class="bot-header">
+            <div class="bot-answer">
+                <div class="bot-name1">Вам отвечает... </div>
+                <div class="bot-name2">Бот Лина</div>
+            </div>
+            <div class="bot-img"></div>
+        </div>
+        <div class="bot-content">
+            <div class="bot-message">Дарова, я Лина.</div>
+            <div class="bot-message">Отправь одну из нижеперечислинных команд, что бы я смог тебе помочь! <br> <span
+                    class="bot-help" onclick="createAnswer(answerDed1)">Дед</span> | <span class="bot-help">Омегавёрс</span> | <span
+                    class="bot-help">Арты</span>;</div>
+        </div>
+        <div class="bot-inputarea">
+            <input class="bot-input" type="text" placeholder="Напишите что-нибудь">
+            <div class="bot-btn" type="button"></div>
+
+        </div>
+    </form>
     <div class="cicle_1 cicle"></div>
     <div class="cicle_1 cicle2"></div>
     <div class="cicle_1 cicle3"></div>
@@ -54,5 +79,7 @@
     <script src="jquery-1.10.1.min.js"></script>
     <script src="script/aboutUs.js"></script>
     <script src="script/move.js"></script>
+    <script src="script/bot.js"></script>
+
 </body>
 </html>

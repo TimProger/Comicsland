@@ -407,7 +407,7 @@ footer{
     text-align: center;
     border-radius: 1px 20px 20px 1px;
     z-index: 10;
-    left: 0px;
+    left: -300px;
     top: 100px;
     overflow: hidden;
 }
@@ -418,4 +418,17 @@ footer{
     border: none; outline: none;
     cursor: pointer;
     color: #fff;
+}
+.search{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inp-search{
+    height: 40%;
+    width: 60%;
+    border-radius: 20px;
+    background-color: black;
 }

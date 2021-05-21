@@ -111,7 +111,8 @@
     border: none;
     cursor: pointer;
     right: 40px;
-    background: url(../images/dino.jpg) center;
+    background: url(../images/submit.png) center;
+    opacity: 70%;
     background-size: cover;
 }
 .bot-help{
@@ -123,7 +124,7 @@
     height: 70px;
     width: 70px;
     background-color: royalblue;
-    background: url(../images/bot-nikita.jpg) center;
+    background: url(../images/Lina.jpg) center;
     background-size: cover;
     right: -100px;
     bottom: 100px;
