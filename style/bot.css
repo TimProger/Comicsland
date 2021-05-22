@@ -131,4 +131,24 @@
     transition: all 2s;
     cursor: pointer;
     z-index: 1000;
+    animation: 4s botScale infinite;
+    border: 1px solid #202227;
+}
+
+@keyframes botScale{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

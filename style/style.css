@@ -47,10 +47,13 @@ nav{
 
 }
 .container{
-    max-width: 50%;
     display: flex;
     justify-content: space-around;
     height: 100%;
+}
+.image_container{
+    background: url(../images/banner.jpg);
+    height: 700px;
 }
 .main-header{
     transition: all 0.6s;
@@ -82,7 +85,7 @@ nav{
     text-decoration: none;
 }
 .btn_href:hover{
-    border-top: 6px solid var(--background-color-yellow);
+    border-top: 5px solid var(--background-color-yellow);
     letter-spacing: 4px;
     color: var(--background-color-yellow);
 
