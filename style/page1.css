@@ -425,7 +425,8 @@ footer{
     border: none;
     padding: 10px;
     font-size: 20px;
-    background: linear-gradient(#303338, #15171a);
+    background: linear-gradient(#303338, #1f2125);
+    
 
     color: #fff;
 
@@ -434,7 +435,8 @@ footer{
     height: 40%;
     border: none;
     outline: none;
-    background: linear-gradient(#303338, #15171a);
+    background: linear-gradient(#303338, #1f2125);
+    
     
     font-size: 20px;
 
