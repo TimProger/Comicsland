@@ -176,11 +176,11 @@ section{
     overflow: visible;
 } */
 
-.feedback .content .frm fieldset>*{
+.feedback .content .frm form>*{
     margin: 5px 20px;
 }
 
-.feedback .content .frm fieldset a{
+.feedback .content .frm form a{
     color: white;
     font-size: 15px;
     text-decoration: none;
@@ -192,18 +192,18 @@ section{
     align-items: center;
     justify-content: center;
 }
-.feedback .content .frm fieldset .field{
+.feedback .content .frm form .field{
     background-color: #1C1C1E;
     border: 2px solid var(--background-color-mainGradient);
     padding: 5px;
     color: white;
     border-radius: 4px;
 }
-.feedback .content .frm fieldset .field:focus{
+.feedback .content .frm form .field:focus{
     box-shadow: 0 0 6px   var(--background-color-mainColor);
     outline: none;
 }
-.feedback .content .frm fieldset{
+.feedback .content .frm form{
     display: flex;
     flex-direction: column;
     margin: 70px 0;
@@ -225,8 +225,5 @@ section{
     width: 100px;
     cursor: pointer;
     align-self: center;
-}
-legend{
-    font-size: 25.8px;
 }
 /* FORM SETTINGS END */

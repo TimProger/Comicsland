@@ -4,13 +4,17 @@ const bot_input = document.querySelector(".bot-input")
 const bot_btn = document.querySelector(".bot-btn")
 const bot_content = document.querySelector(".bot-content")
 const bot_close = document.querySelector('.close-bot')
-let answerDed1 = `Дед хороший персонаж, жаль у меня его нету. А вот у Тимы он есть. Тима крутой.`
-let answerOV = `Увы, с такими запросами я могу вам лишь пособолезновать.`
+let answerComic1 = `Очень советую прочитать русский комикс Майор Гром.`
+let answerMore = `Этот сайт был заданием, которое я должен был выполнить, однако во время
+его создания я много эксперементировал из-за чего некоторые части кода могут
+выглядеть ужасно.`
+let answerSpoiler = `Джирайя умрёт, а Наруто и Саске станут богами, 
+после чего лишатся всей силы из-за Боруто.`
 window.addEventListener('load', function(evt){
     setTimeout(function(){
         bot_form.style.bottom = '0px'
 
-    }, 500)
+    }, 5000)
 })
 function enterMessage(evt) {
     let message = document.createElement('div')
@@ -34,29 +38,35 @@ function enterMessage(evt) {
                 bot_content.scrollTo(0, bot_content.scrollHeight)
             }
             switch (message.innerHTML) {
-                case `Дед`:
-                    createAnswer(answerDed1)
+                case `1`:
+                    createAnswer(answerComic1)
+                    return  
+                case `1.`:
+                    createAnswer(answerComic1)
+                    return                                                        
+                case `2`:
+                    createAnswer(answerMore)
                     return
-                case `дед`:
-                    createAnswer(answerDed1)
-                    return 
-                case `ДЕД`:
-                    createAnswer(answerDed1)
-                    return                                                          
-                case `Омегавёрс`:
-                    createAnswer(answerOV)
+                case `2.`:
+                    createAnswer(answerMore)
                     return
-                case `ОМЕГАВЁРС`:
-                    createAnswer(answerOV)
+                case `3`:
+                    createAnswer(answerSpoiler)
                     return
-                case `омегавёрс`:
-                    createAnswer(answerOV)
+                case `3.`:
+                    createAnswer(answerSpoiler)
                     return
-                case `Ты чёрт`:
-                    createAnswer(`Сам ты чёрт`)
+                case `Пасхалка`:
+                    createAnswer(`Ты думал, что это будет пасхалка? Но это был я, Дио!`)
+                    return
+                case `пасхалка`:
+                    createAnswer(`Ты думал, что это будет пасхалка? Но это был я, Дио!`)
+                    return
+                case `ПАСХАЛКА`:
+                    createAnswer(`Ты думал, что это будет пасхалка? Но это был я, Дио!`)
                     return
                 default:
-                    createAnswer(`Ну и как мне на это реагировать?`)
+                    createAnswer(`Слишком сложная команда, даттебаё!`)
                     return
             }
         }, 200)

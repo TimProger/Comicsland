@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/bot.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/main-image.png" type="image/png">
     <title>COMICSLAND</title>
 </head>
 <body>
@@ -19,15 +20,21 @@
         <div class="bot-header">
             <div class="bot-answer">
                 <div class="bot-name1">Вам отвечает... </div>
-                <div class="bot-name2">Бот Лина</div>
+                <div class="bot-name2">Бот Наруто</div>
             </div>
             <div class="bot-img"></div>
         </div>
         <div class="bot-content">
-            <div class="bot-message">Дарова, я Лина.</div>
-            <div class="bot-message">Отправь одну из нижеперечислинных команд, что бы я смог тебе помочь! <br> <span
-                    class="bot-help" onclick="createAnswer(answerDed1)">Дед</span> | <span class="bot-help">Омегавёрс</span> | <span
-                    class="bot-help">Арты</span>;</div>
+            <div class="bot-message">Йоу, как делишки?</div>
+            <div class="bot-message">
+                Отправь цифру одной из нижеперечислинных команд, что бы я смог тебе помочь! 
+                <br> 
+                 <span class="bot-help">1. Посоветуй комикс</span>
+                <br>
+                 <span class="bot-help">2. Немного о сайте</span>
+                <br>
+                 <span class="bot-help">3. Спойлеры к Наруто</span>;
+                </div>
         </div>
         <div class="bot-inputarea">
             <input class="bot-input" type="text" placeholder="Напишите что-нибудь">
@@ -38,7 +45,7 @@
     <div class="addapt">
         <header>
             <nav>
-                <a href="index.html" class="main-header">Комиксы.Hub</a>
+                <a href="index.html" class="main-header">COMICSLAND</a>
 
                 <div class="container">
                     <a class="back_href"href="index.html">
@@ -55,15 +62,11 @@
                 <p></p>
             </div>
             <div class="feedback">
-                <div class="window">
                     <div class="content">
-                        <!-- <div class="image">
-                            <div class="image2"></div>
-                        </div> -->
                         <div class="frm">
                             
-                            <fieldset action="" method="POST">
-                                <legend>Пожалуйста опишите вашу проблему</legend>
+                            <form action="" method="POST">
+                                <h3>Пожалуйста опишите вашу проблему</h3>
 
                                 <input required placeholder="ИМЯ" class="field" name="name" type="text">
                                 <input required placeholder="E-MAIL" class="field" name="email" type="email">
@@ -73,11 +76,9 @@
                                     <label for="accept">Я даю согласие на обработку своих персональных данных</label>
                                 </div>
                                 <button>ОТПРАВИТЬ</button>
-                            </fieldset>
+                            </form>
                         </div>
                     </div>
-    
-                </div>
             </div>
         </section>
     
