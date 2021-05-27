@@ -1,6 +1,9 @@
 :root{
     --background-color-yellow: #FCF192;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
