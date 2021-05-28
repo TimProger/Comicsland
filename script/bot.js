@@ -12,8 +12,7 @@ let answerSpoiler = `Джирайя умрёт, а Наруто и Саске с
 после чего лишатся всей силы из-за Боруто.`
 window.addEventListener('load', function(evt){
     setTimeout(function(){
-        bot_form.style.bottom = '0px'
-
+        bot_show.style.right = '100px'
     }, 5000)
 })
 function enterMessage(evt) {

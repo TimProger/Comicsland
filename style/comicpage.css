@@ -46,7 +46,6 @@ nav{
     padding-left: 40px;
     padding-right: 40px;
     justify-content: space-between;
-    background: linear-gradient(#1e2024, #141518);
     height: 100%;
 
 }
@@ -68,17 +67,7 @@ nav{
     text-decoration: none;
     cursor: pointer;
 }
-.about{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    width: 50%;
-    border-bottom: 3px solid #ffffff;
-    right: 17px;
-    font-size: 22px;
-}
+
 .back{
     font-family: 'Spectral SC', serif;
     border: none; outline: none; 
@@ -120,15 +109,7 @@ nav{
     height: 25px;
     width: 25px;
 }
-section{
-    width: 100%;
-    height: 1500px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 20px;
-}
+
 h1{
     font-size: 50px;
     border-bottom: 4px solid #121416;
@@ -141,10 +122,9 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     border-radius: 60px;
-    height: 1200px;
-    width: 70%;
+    height: 1400px;
+    width: 100%;
 }
 .section-container p{
     font-size: 30px;
@@ -155,19 +135,18 @@ h1{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    background: linear-gradient(#1c1d20, #121416);
-    padding: 20px;
-    border-radius: 60px;
     height: 100%;
     width: 100%;
     overflow: scroll;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
 }
 ::-webkit-scrollbar{
     display: none;
 }
 .comic{
     background-color: yellow;
-    margin: 5%;
+    margin: 2%;
     margin-bottom: 1%;
     height: 620px;
     width: 400px;
@@ -178,8 +157,12 @@ h1{
     flex-direction: column;
     border-radius: 20px;
     overflow: hidden;
-    border-bottom: 4px solid #202325;
-    
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+.comic:hover{
+    transform: scale(0.9) translate(-10px);
 }
 .read{
     position: relative;
@@ -321,8 +304,10 @@ footer{
     align-items: center;
     justify-content: space-between;
     font-size: 50px;
+    margin-bottom: 50px;
     overflow: hidden;
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .arrow-container{
     display: flex;

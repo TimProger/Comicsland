@@ -11,7 +11,7 @@ const comics_container = [
     },
     comic_aot = {
         name: 'Attack on Titan2',
-        img: './images/aot.jpg',
+        img: './images/aot.png',
         main_img: './images/aot-1.jpg',
         bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
         url: `images/aot/`,
@@ -31,42 +31,18 @@ const comics_container = [
         img: './images/4.jpg',
         main_img: './images/jojo6-1.jpg',
         bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-
     },
     comic_aot = {
         name: 'Attack on Titan12',
         img: './images/4.jpg',
         main_img: './images/jojo6-1.jpg',
         bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-
     },
     comic_aot = {
         name: 'Attack on Titan12',
         img: './images/4.jpg',
         main_img: './images/jojo6-1.jpg',
         bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-
-    },
-    comic_aot = {
-        name: 'Attack on Titan12',
-        img: './images/4.jpg',
-        main_img: './images/jojo6-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-
-    },
-    comic_aot = {
-        name: 'Attack on Titan12',
-        img: './images/4.jpg',
-        main_img: './images/jojo6-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-
-    },
-    comic_aot = {
-        name: 'Attack on Titan12',
-        img: './images/1.jpg',
-        main_img: './images/jojo6-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-
     }
 ]
 for(i=0;i<comics_container.length; i++){
@@ -88,7 +64,7 @@ for(i=0;i<comics_container.length; i++){
     const comic_url = comics_container[i].url
     const comic_length = comics_container[i].length
     const comic_img_type = comics_container[i].img_type
-    btn.addEventListener('click', function(evt){
+    comic.addEventListener('click', function(evt){
         document.body.innerHTML = `
                 <div class="addapt">
                 <header>
