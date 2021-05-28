@@ -5,18 +5,24 @@ const comics_container = [
         img: './images/jojo6-1.jpg',
         main_img: './images/jojo6-1.jpg',
         bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+        url: `images/jojo6/`,
+        length: 45,
+        img_type: `jpg`,
     },
     comic_aot = {
         name: 'Attack on Titan2',
-        img: './images/2.jpg',
-        main_img: './images/jojo6-1.jpg',
+        img: './images/aot.jpg',
+        main_img: './images/aot-1.jpg',
         bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+        url: `images/aot/`,
+        length: 49,
+        img_type: `png`,
 
     },
     comic_aot = {
         name: 'Attack on Titan412',
         img: './images/3.jpg',
-        main_img: './images/jojo6-1.jpg',
+        main_img: './images/aot-1.jpg',
         bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
 
     },
@@ -79,6 +85,9 @@ for(i=0;i<comics_container.length; i++){
     btn.style.background = `${comics_container[i].btnbgcol}`
     btn.innerText= 'Start reading'
     const comic_content = comics_container[i].main_img
+    const comic_url = comics_container[i].url
+    const comic_length = comics_container[i].length
+    const comic_img_type = comics_container[i].img_type
     btn.addEventListener('click', function(evt){
         document.body.innerHTML = `
                 <div class="addapt">
@@ -110,6 +119,7 @@ for(i=0;i<comics_container.length; i++){
                             <div class="arrow-right arrows"></div>
                         </div>
                     </div>
+                    <div class="pages"></div>
                 </div>
                 </section>
                 <footer>
@@ -122,6 +132,35 @@ for(i=0;i<comics_container.length; i++){
                     </div>
                 </footer>
             `
+            const arrow_right = document.querySelector('.arrow-right')
+            const arrow_left = document.querySelector('.arrow-left')
+            const main_comic_block = document.querySelector('.main-comic-block')
+            // let comic_length = aot[0].length;
+            // console.log(comic_length)
+            let counter = 0
+            arrow_right.addEventListener('click', function(evt){
+                counter++
+                console.log(counter)
+
+                if(counter<=0){
+                    counter=1
+                }
+                else if(counter==comic_length+1){
+                    main_comic_block.style.background = `url(${comic_content})`
+                    counter = 1
+                }
+                main_comic_block.style.background = `url(${comic_url}page${counter}.${comic_img_type})`
+            })
+            arrow_left.addEventListener('click', function(evt){
+                counter--
+                main_comic_block.style.background = `url(${comic_url}page${counter}.${comic_img_type})`
+
+                if(counter<=0){
+                    main_comic_block.style.background = `url(${comic_content})`
+                    console.log(counter)
+                    counter = 0
+                }
+            })
         })
     console.log(comics_container);
     read.appendChild(btn)
