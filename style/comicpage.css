@@ -160,9 +160,12 @@ h1{
     transition: 0.5s;
     cursor: pointer;
     transform: scale(0.8);
+    box-shadow: 0 10px 10px black;
+
 }
 .comic:hover{
-    transform: scale(0.9) translate(-10px);
+    transform: scale(0.85) translate(0, -10px);
+    box-shadow: 0 20px 30px black;
 }
 .read{
     position: relative;
@@ -173,6 +176,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 .comic-btn{
     height: 80%;
@@ -288,7 +292,7 @@ footer{
 }
 .comic-page-container{
     height: 1200px;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,15 +303,16 @@ footer{
     background-color: #1c1d20;
     border-radius: 20px;
     height: 100%;
-    width: 779px;
+    min-width: 779px;
+    max-width: 900px;
+    max-height: 1400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 50px;
     margin-bottom: 50px;
     overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 .arrow-container{
     display: flex;

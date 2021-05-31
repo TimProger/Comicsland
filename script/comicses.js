@@ -1,49 +1,22 @@
 const swiper_container = document.querySelector('.swiper-container')
-const comics_container = [
-    comic_aot = {
-        name: 'JoJo Stone Ocean',
-        img: './images/jojo6-1.jpg',
-        main_img: './images/jojo6-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-        url: `images/jojo6/`,
-        length: 45,
-        img_type: `jpg`,
-    },
-    comic_aot = {
-        name: 'Attack on Titan2',
-        img: './images/aot.png',
-        main_img: './images/aot-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-        url: `images/aot/`,
-        length: 49,
-        img_type: `png`,
-
-    },
-    comic_aot = {
-        name: 'Attack on Titan412',
-        img: './images/3.jpg',
-        main_img: './images/aot-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-
-    },
-    comic_aot = {
-        name: 'Attack on Titan12',
-        img: './images/4.jpg',
-        main_img: './images/jojo6-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-    },
-    comic_aot = {
-        name: 'Attack on Titan12',
-        img: './images/4.jpg',
-        main_img: './images/jojo6-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
-    },
-    comic_aot = {
-        name: 'Attack on Titan12',
-        img: './images/4.jpg',
-        main_img: './images/jojo6-1.jpg',
-        bgcol: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))',
+class ComicPage{
+    constructor(name, img, main_img, url, length, img_type){
+        this.name = name,
+        this.img = img,
+        this.main_img = main_img,
+        this.url = url,
+        this.length = length,
+        this.img_type = img_type
     }
+}
+const jojo6 = new ComicPage('JoJo Stone Ocean', './images/jojo6-1.jpg', './images/jojo6-1.jpg', 'images/jojo6/', 45, 'jpg')
+const aot1 = new ComicPage('Attack on Titan', './images/aot.png', './images/aot-1.jpg', `images/aot/`, 49, 'png')
+const chainsaw1 = new ComicPage('Chainsaw', './images/main-chainsaw.jpg', './images/main-chainsaw.jpg', `images/chainsaw/`, 55, 'jpg')
+const comics_container = [
+    jojo6,
+    aot1,
+    chainsaw1,
+    
 ]
 for(i=0;i<comics_container.length; i++){
     const comic = document.createElement('div')
@@ -55,7 +28,6 @@ for(i=0;i<comics_container.length; i++){
     comic.style.backgroundSize = `cover`
     const read = document.createElement('div')
     read.classList.add('read')
-    read.style.background = `${comics_container[i].bgcol}`
     const btn = document.createElement('div')
     btn.classList.add('comic-btn')
     btn.style.background = `${comics_container[i].btnbgcol}`
@@ -89,7 +61,7 @@ for(i=0;i<comics_container.length; i++){
                 <section>
                 <h1 class="comic-page-header">${name.innerText}</h1>
                 <div class="comic-page-container">
-                    <div class="main-comic-block" style="background: url(${comic_content}) no-repeat; background-size: cover;">
+                    <div class="main-comic-block" style="background: url(${comic_content}); background-repeat: no-repeat; background-size: cover;">
                         <div class="arrow-container">
                             <div class="arrow-left arrows"></div>
                             <div class="arrow-right arrows"></div>
@@ -122,17 +94,17 @@ for(i=0;i<comics_container.length; i++){
                     counter=1
                 }
                 else if(counter==comic_length+1){
-                    main_comic_block.style.background = `url(${comic_content})`
+                    main_comic_block.style = `background: url(${comic_content}); background-repeat: no-repeat; background-size: cover;`
                     counter = 1
                 }
-                main_comic_block.style.background = `url(${comic_url}page${counter}.${comic_img_type})`
+                main_comic_block.style = `background: url(${comic_url}page${counter}.${comic_img_type}); background-repeat: no-repeat; background-size: cover;`
             })
             arrow_left.addEventListener('click', function(evt){
                 counter--
-                main_comic_block.style.background = `url(${comic_url}page${counter}.${comic_img_type})`
+                main_comic_block.style = `background: url(${comic_url}page${counter}.${comic_img_type}); background-repeat: no-repeat; background-size: cover;`
 
                 if(counter<=0){
-                    main_comic_block.style.background = `url(${comic_content})`
+                    main_comic_block.style = `background: url(${comic_content}); background-repeat: no-repeat; background-size: cover;`
                     console.log(counter)
                     counter = 0
                 }
