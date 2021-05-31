@@ -122,13 +122,14 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 60px;
     height: 1400px;
     width: 100%;
+
 }
 .section-container p{
     font-size: 30px;
     text-shadow: 4px 4px #121416;
+    
 }
 .swiper-container{
     display: flex;
