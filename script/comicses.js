@@ -80,6 +80,8 @@ for(i=0;i<comics_container.length; i++){
                     </div>
                 </footer>
             `
+            window.scrollTo(0, window.scrollHeight)
+
             const arrow_right = document.querySelector('.arrow-right')
             const arrow_left = document.querySelector('.arrow-left')
             const main_comic_block = document.querySelector('.main-comic-block')
