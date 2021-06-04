@@ -12,11 +12,12 @@ class ComicPage{
 const jojo6 = new ComicPage('JoJo Stone Ocean', './images/jojo6-1.jpg', './images/jojo6-1.jpg', 'images/jojo6/', 45, 'jpg')
 const aot1 = new ComicPage('Attack on Titan', './images/aot.png', './images/aot-1.jpg', `images/aot/`, 49, 'png')
 const chainsaw1 = new ComicPage('Chainsaw', './images/main-chainsaw.jpg', './images/main-chainsaw.jpg', `images/chainsaw/`, 55, 'jpg')
+const onepunch_one_1 = new ComicPage('Onepunchman-One', './images/onepunchman-one-main.jpg', './images/onepunchman-one-main.jpg', `images/onepunchman/`, 15, 'png')
 const comics_container = [
     jojo6,
     aot1,
     chainsaw1,
-    
+    onepunch_one_1,
 ]
 for(i=0;i<comics_container.length; i++){
     const comic = document.createElement('div')
@@ -28,15 +29,25 @@ for(i=0;i<comics_container.length; i++){
     comic.style.backgroundSize = `cover`
     const read = document.createElement('div')
     read.classList.add('read')
-    const btn = document.createElement('div')
-    btn.classList.add('comic-btn')
-    btn.style.background = `${comics_container[i].btnbgcol}`
-    btn.innerText= 'Start reading'
+    const comic_name = comics_container[i].name
     const comic_content = comics_container[i].main_img
     const comic_url = comics_container[i].url
     const comic_length = comics_container[i].length
     const comic_img_type = comics_container[i].img_type
     comic.addEventListener('click', function(evt){
+        document.head.innerHTML = `
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style/style.css">
+            <link rel="stylesheet" href="style/bot.css">
+            <link rel="stylesheet" href="style/comicpage.css">
+            <link rel="shortcut icon" href="images/main-image.png" type="image/png">
+            <title>${comic_name}</title>
+
+        `
         document.body.innerHTML = `
                 <div class="addapt">
                 <header>
@@ -113,7 +124,6 @@ for(i=0;i<comics_container.length; i++){
             })
         })
     console.log(comics_container);
-    read.appendChild(btn)
     comic.appendChild(read)
     swiper_container.appendChild(comic)
 
