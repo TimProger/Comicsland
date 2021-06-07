@@ -1,5 +1,5 @@
 const swiper_container = document.querySelector('.swiper-container')
-class ComicPage{
+class titlePage{
     constructor(name, img, main_img, url, length, img_type){
         this.name = name,
         this.img = img,
@@ -9,10 +9,10 @@ class ComicPage{
         this.img_type = img_type
     }
 }
-const jojo6 = new ComicPage('JoJo Stone Ocean', './images/jojo6-1.jpg', './images/jojo6-1.jpg', 'images/jojo6/', 45, 'jpg')
-const aot1 = new ComicPage('Attack on Titan', './images/aot.png', './images/aot-1.jpg', `images/aot/`, 49, 'png')
-const chainsaw1 = new ComicPage('Chainsaw', './images/main-chainsaw.jpg', './images/main-chainsaw.jpg', `images/chainsaw/`, 55, 'jpg')
-const onepunch_one_1 = new ComicPage('Onepunchman-One', './images/onepunchman-one-main.jpg', './images/onepunchman-one-main.jpg', `images/onepunchman/`, 15, 'png')
+const jojo6 = new titlePage('JoJo Stone Ocean', './images/jojo6-1.jpg', './images/jojo6-1.jpg', 'images/jojo6/', 45, 'jpg')
+const aot1 = new titlePage('Attack on Titan', './images/aot.png', './images/aot-1.jpg', `images/aot/`, 49, 'png')
+const chainsaw1 = new titlePage('Chainsaw', './images/main-chainsaw.jpg', './images/main-chainsaw.jpg', `images/chainsaw/`, 55, 'jpg')
+const onepunch_one_1 = new titlePage('Onepunchman-One', './images/onepunchman-one-main.jpg', './images/onepunchman-one-main.jpg', `images/onepunchman/`, 15, 'png')
 const comics_container = [
     jojo6,
     aot1,
