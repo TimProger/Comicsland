@@ -71,6 +71,7 @@ for(i=0;i<comics_container.length; i++){
                 </header>
                 <section>
                 <h1 class="comic-page-header">${name.innerText}</h1>
+                <div class="pages">0/${comic_length}</div>
                 <div class="comic-page-container">
                     <div class="main-comic-block" style="background: url(${comic_content}); background-repeat: no-repeat; background-size: cover;">
                         <div class="arrow-container">
@@ -78,7 +79,6 @@ for(i=0;i<comics_container.length; i++){
                             <div class="arrow-right arrows"></div>
                         </div>
                     </div>
-                    <div class="pages"></div>
                 </div>
                 </section>
                 <footer>
@@ -92,16 +92,14 @@ for(i=0;i<comics_container.length; i++){
                 </footer>
             `
             window.scrollTo(0, window.scrollHeight)
-
+            const pages = document.querySelector('.pages')
             const arrow_right = document.querySelector('.arrow-right')
             const arrow_left = document.querySelector('.arrow-left')
             const main_comic_block = document.querySelector('.main-comic-block')
-            // let comic_length = aot[0].length;
-            // console.log(comic_length)
             let counter = 0
             arrow_right.addEventListener('click', function(evt){
                 counter++
-                console.log(counter)
+                (counter)
                 window.scrollTo(0, window.scrollHeight)
 
                 if(counter<=0){
@@ -112,6 +110,7 @@ for(i=0;i<comics_container.length; i++){
                     counter = 1
                 }
                 main_comic_block.style = `background: url(${comic_url}page${counter}.${comic_img_type}); background-repeat: no-repeat; background-size: cover;`
+                pages.innerHTML = `${counter}/${comic_length}`
             })
             arrow_left.addEventListener('click', function(evt){
                 counter--
@@ -120,12 +119,11 @@ for(i=0;i<comics_container.length; i++){
 
                 if(counter<=0){
                     main_comic_block.style = `background: url(${comic_content}); background-repeat: no-repeat; background-size: cover;`
-                    console.log(counter)
                     counter = 0
                 }
+                pages.innerHTML = `${counter}/${comic_length}`
             })
         })
-    console.log(comics_container);
     comic.appendChild(read)
     swiper_container.appendChild(comic)
 
