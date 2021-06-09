@@ -102,7 +102,8 @@ for(i=0;i<comics_container.length; i++){
             arrow_right.addEventListener('click', function(evt){
                 counter++
                 (counter)
-                window.scrollTo(0, window.scrollHeight)
+                window.scrollTo(0, 410)
+
                 if(counter<=0){
                     counter=1
                 }
@@ -116,7 +117,7 @@ for(i=0;i<comics_container.length; i++){
             arrow_left.addEventListener('click', function(evt){
                 counter--
                 main_comic_block.style = `background: url(${comic_url}page${counter}.${comic_img_type}); background-repeat: no-repeat; background-size: cover;`
-                window.scrollTo(0, window.scrollHeight)
+                window.scrollTo(0, 410)
                 if(counter<=0){
                     main_comic_block.style = `background: url(${comic_content}); background-repeat: no-repeat; background-size: cover;`
                     counter = 0
