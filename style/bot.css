@@ -7,10 +7,8 @@
     background-color: #110101;
     background: linear-gradient(#101114, #040405);
     font-size: 18px;
-
     z-index: 20;
     color: #fff;
-    /* overflow: auto; */
     border-top-right-radius: 40px;
     border-top-left-radius: 10px;
     transition: all 1s;

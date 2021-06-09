@@ -45,6 +45,8 @@ for(i=0;i<comics_container.length; i++){
             <link rel="stylesheet" href="style/bot.css">
             <link rel="stylesheet" href="style/comicpage.css">
             <link rel="shortcut icon" href="images/main-image.png" type="image/png">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
             <title>${comic_name}</title>
 
         `
@@ -101,7 +103,6 @@ for(i=0;i<comics_container.length; i++){
                 counter++
                 (counter)
                 window.scrollTo(0, window.scrollHeight)
-
                 if(counter<=0){
                     counter=1
                 }
@@ -116,7 +117,6 @@ for(i=0;i<comics_container.length; i++){
                 counter--
                 main_comic_block.style = `background: url(${comic_url}page${counter}.${comic_img_type}); background-repeat: no-repeat; background-size: cover;`
                 window.scrollTo(0, window.scrollHeight)
-
                 if(counter<=0){
                     main_comic_block.style = `background: url(${comic_content}); background-repeat: no-repeat; background-size: cover;`
                     counter = 0
@@ -126,5 +126,4 @@ for(i=0;i<comics_container.length; i++){
         })
     comic.appendChild(read)
     swiper_container.appendChild(comic)
-
 }

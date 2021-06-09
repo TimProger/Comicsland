@@ -37,30 +37,20 @@ function enterMessage(evt) {
                 bot_content.scrollTo(0, bot_content.scrollHeight)
             }
             switch (message.innerHTML) {
-                case `1`:
-                    createAnswer(answerComic1)
-                    return  
+                case `1` :
                 case `1.`:
                     createAnswer(answerComic1)
                     return                                                        
                 case `2`:
-                    createAnswer(answerMore)
-                    return
                 case `2.`:
                     createAnswer(answerMore)
                     return
                 case `3`:
-                    createAnswer(answerSpoiler)
-                    return
                 case `3.`:
                     createAnswer(answerSpoiler)
                     return
                 case `Пасхалка`:
-                    createAnswer(`Ты думал, что это будет пасхалка? Но это был я, Дио!`)
-                    return
                 case `пасхалка`:
-                    createAnswer(`Ты думал, что это будет пасхалка? Но это был я, Дио!`)
-                    return
                 case `ПАСХАЛКА`:
                     createAnswer(`Ты думал, что это будет пасхалка? Но это был я, Дио!`)
                     return

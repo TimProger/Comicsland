@@ -15,18 +15,15 @@
     z-index: 4;
 } 
 body{
-
     margin: 0;
     padding: 0;
     font-family: 'Architects Daughter', cursive;
-
     background-color: #15161a;
     z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
-    
 }
 
 header{
@@ -50,10 +47,8 @@ nav{
     justify-content: space-around;
     height: 100%;
     background: linear-gradient(#1e2024, #141518);
-    
 }
 .image_container{
-
     width: 100%;
     height: 700px;
     position: relative;
@@ -116,12 +111,10 @@ h2:hover{
 .content-container{
     position: relative;
     height: 1080px;
-    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
-
 }
 section{
     background-color: #16181b;
@@ -129,7 +122,6 @@ section{
     align-items: center;
     flex-direction: column;
 }
-
 .main-text{
     display: flex;
     align-items: center;
@@ -163,14 +155,12 @@ section{
 .videos{
     width: 85%;
     margin: 5%;
-
     height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 87% 13% 80% 20% / 10% 90% 10% 90% ;
     background: none;
-
 }
 .videos iframe{
     position: relative;
@@ -270,19 +260,14 @@ footer{
     padding: 10px;
     font-size: 20px;
     background: linear-gradient(#303338, #1f2125);
-
     color: #fff;
-
 }
 .inp-submit{
     height: 40%;
     border: none;
     outline: none;
     background: linear-gradient(#303338, #1f2125);
-
-    
     font-size: 20px;
-
     border-left: 1px solid #ffffff;
     padding-left: 20px;
     padding-right: 20px;
@@ -291,12 +276,12 @@ footer{
     color: #fff;
     cursor: pointer;
     transition: all 0.5s;
+    font-family: 'Architects Daughter', cursive;
 
 }
 .inp-submit:hover{
     border-color: var(--background-color-yellow);
     color: var(--background-color-yellow);
-
 }
 @media screen and (min-width: 1820px) {
     .videos {
