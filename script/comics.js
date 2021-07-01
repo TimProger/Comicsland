@@ -106,7 +106,7 @@ for (let i = 0; i < comics__container.length; i++) {
         </div>
     </footer>
 `
-    // Создал head для страницы комикса
+    // Создал body для страницы комикса
 
     comic.addEventListener('click', function (evt) {
         document.head.innerHTML = head__content
@@ -142,6 +142,6 @@ for (let i = 0; i < comics__container.length; i++) {
             }
             pages.innerHTML = `${counter}/${comic__length}`
         })
-    })
+    }) // Создал стрелки для мотания комиксов
     swiper__container.appendChild(comic)
 }
