@@ -1,20 +1,24 @@
-:root{
+:root {
     --background-color-yellow: #FCF192;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-  }
-*{
+}
+
+* {
     z-index: 4;
-} 
-body{
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Architects Daughter', cursive;
@@ -26,12 +30,13 @@ body{
     color: #fff;
 }
 
-header{
+header {
     width: 100%;
     overflow: hidden;
     height: 129px;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,19 +47,22 @@ nav{
     background: linear-gradient(#1e2024, #141518);
 
 }
-.container{
+
+.container {
     display: flex;
     justify-content: space-around;
     height: 100%;
     background: linear-gradient(#1e2024, #141518);
 }
-.image_container{
+
+.image_container {
     width: 100%;
     height: 700px;
     position: relative;
     overflow: hidden;
 }
-.main_image{
+
+.main_image {
     position: relative;
     width: 100%;
     height: 900px;
@@ -63,7 +71,8 @@ nav{
     z-index: 0;
     bottom: 200px;
 }
-.main-header{
+
+.main-header {
     transition: all 0.6s;
     color: var(--background-color-yellow);
     position: relative;
@@ -74,11 +83,14 @@ nav{
     cursor: pointer;
     text-decoration: none;
 }
-.btn{
-    border: none; outline: none; 
+
+.btn {
+    border: none;
+    outline: none;
     z-index: 1;
 }
-.btn_href{
+
+.btn_href {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,24 +103,28 @@ nav{
     transition-duration: 0.5s;
     text-decoration: none;
 }
-.btn_href:hover{
+
+.btn_href:hover {
     border-top: 10px solid var(--background-color-yellow);
     letter-spacing: 4px;
     color: var(--background-color-yellow);
 
 }
-.main-header:hover{
-    text-shadow: 0 0 10px var(--background-color-yellow), 0 0 20px var(--background-color-yellow), 0 0 30px var(--background-color-yellow), 0 0 40px var(--background-color-yellow), 0 0 70px var(--background-color-yellow);
-}
-h2:hover{
+
+.main-header:hover {
     text-shadow: 0 0 10px var(--background-color-yellow), 0 0 20px var(--background-color-yellow), 0 0 30px var(--background-color-yellow), 0 0 40px var(--background-color-yellow), 0 0 70px var(--background-color-yellow);
 }
 
-.swiper-container{
+h2:hover {
+    text-shadow: 0 0 10px var(--background-color-yellow), 0 0 20px var(--background-color-yellow), 0 0 30px var(--background-color-yellow), 0 0 40px var(--background-color-yellow), 0 0 70px var(--background-color-yellow);
+}
+
+.swiper-container {
     height: 700px;
     overflow: hidden;
 }
-.content-container{
+
+.content-container {
     position: relative;
     height: 1080px;
     display: flex;
@@ -116,13 +132,15 @@ h2:hover{
     justify-content: center;
     z-index: 1;
 }
-section{
+
+section {
     background-color: #16181b;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.main-text{
+
+.main-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,17 +151,20 @@ section{
     width: 100%;
     height: 180px;
 }
-.second-block{
-    background: linear-gradient(180deg, #16181b 1%, #2a2b2e 19%,#2a2b2e 89%, #1c1d20);
+
+.second-block {
+    background: linear-gradient(180deg, #16181b 1%, #2a2b2e 19%, #2a2b2e 89%, #1c1d20);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.facts{
+
+.facts {
     font-size: 35px;
     color: var(--background-color-yellow)
 }
-.about{
+
+.about {
     width: 70%;
     display: flex;
     align-items: center;
@@ -152,17 +173,19 @@ section{
     font-size: 25px;
     color: #fff;
 }
-.videos{
+
+.videos {
     width: 85%;
     margin: 5%;
     height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 87% 13% 80% 20% / 10% 90% 10% 90% ;
+    border-radius: 87% 13% 80% 20% / 10% 90% 10% 90%;
     background: none;
 }
-.videos iframe{
+
+.videos iframe {
     position: relative;
     margin: 0;
     padding: 0;
@@ -176,7 +199,8 @@ section{
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-footer{
+
+footer {
     width: 100%;
     background: linear-gradient(#1c1d20, #121416);
     align-items: center;
@@ -188,14 +212,16 @@ footer{
     margin-right: 2em;
     color: #fff;
 }
-.list{
+
+.list {
     width: 30%;
     display: flex;
     align-items: center;
     align-self: center;
     flex-direction: row;
 }
-.uls{
+
+.uls {
     width: 100%;
     align-items: center;
 
@@ -205,19 +231,23 @@ footer{
 
     list-style: none;
 }
-.uls a{
+
+.uls a {
     text-decoration: none;
     color: #fff;
 }
-.lis{
+
+.lis {
     transition: all 0.5s;
     cursor: pointer;
 }
-.lis:hover{
+
+.lis:hover {
     text-decoration: underline;
     color: var(--background-color-yellow);
 }
-.beta-block{
+
+.beta-block {
     transition: all 0.3s;
     height: 70px;
     width: 300px;
@@ -235,22 +265,26 @@ footer{
     top: 100px;
     overflow: hidden;
 }
-.beta-block button{
+
+.beta-block button {
     height: 100%;
     width: 12%;
     background: linear-gradient(#6b3434, #3a1818);
-    border: none; outline: none;
+    border: none;
+    outline: none;
     cursor: pointer;
     color: #fff;
 }
-.search{
+
+.search {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.inp-search{
+
+.inp-search {
     height: 40%;
     width: 60%;
     border-top-left-radius: 20px;
@@ -262,7 +296,8 @@ footer{
     background: linear-gradient(#303338, #1f2125);
     color: #fff;
 }
-.inp-submit{
+
+.inp-submit {
     height: 40%;
     border: none;
     outline: none;
@@ -279,13 +314,15 @@ footer{
     font-family: 'Architects Daughter', cursive;
 
 }
-.inp-submit:hover{
+
+.inp-submit:hover {
     border-color: var(--background-color-yellow);
     color: var(--background-color-yellow);
 }
+
 @media screen and (min-width: 1820px) {
     .videos {
         background: linear-gradient(#33363b, #17181b);
 
     }
-  }
+}
