@@ -12,7 +12,7 @@ let answerSpoiler = `Джирайя умрёт, а Наруто и Саске с
 после чего лишатся всей силы из-за Боруто.`
 window.addEventListener('load', function (evt) {
     setTimeout(function () {
-        bot_show.style.right = '100px'
+        bot_form.style.bottom = '0px'
     }, 5000)
 })
 
@@ -47,13 +47,13 @@ function enterMessage(evt) {
             let пасхалка = 'Пасхалка'
             if (checkNum(1)) {
                 createAnswer(answerComic1)
-            }else if(checkNum(2)){
+            } else if (checkNum(2)) {
                 createAnswer(answerMore)
-            }else if(checkNum(3)){
+            } else if (checkNum(3)) {
                 createAnswer(answerSpoiler)
-            }else if(message.innerHTML == пасхалка || message.innerHTML == пасхалка.toUpperCase() || message.innerHTML == пасхалка.toLowerCase()){
+            } else if (message.innerHTML == пасхалка || message.innerHTML == пасхалка.toUpperCase() || message.innerHTML == пасхалка.toLowerCase()) {
                 createAnswer(`Ты думал, что это будет пасхалка? Но это был я, Дио!`)
-            }else{
+            } else {
                 createAnswer(`Слишком сложная команда, даттебаё!`)
             }
         }, 200)

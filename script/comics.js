@@ -2,11 +2,11 @@ const swiper__container = document.querySelector('.swiper-container')
 class titlePage {
     constructor(name, img, main__img, url, length, img__type) {
         this.name = name,
-        this.img = img,
-        this.main__img = main__img,
-        this.url = url,
-        this.length = length,
-        this.img__type = img__type
+            this.img = img,
+            this.main__img = main__img,
+            this.url = url,
+            this.length = length,
+            this.img__type = img__type
     }
 } // Создал класс для клепания объектов
 const jojo6 = new titlePage('JoJo Stone Ocean', './images/jojo6-1.jpg', './images/jojo6-1.jpg', 'images/jojo6/', 45, 'jpg')
@@ -18,19 +18,6 @@ const comics__container = [
     jojo6,
     aot1,
     chainsaw1,
-    jojo6,
-    aot1,
-    chainsaw1,
-    jojo6,
-    aot1,
-    chainsaw1,
-    jojo6,
-    aot1,
-    chainsaw1,
-    jojo6,
-    aot1,
-    chainsaw1,
-    onepunch__one__1,
     onepunch__one__1,
 ] // Все объеты созданные при помощи класса titlePage были записаны сюда, благодаря чему на главной странице появился их собственный блок
 const setAttribute = (el, name, i) => {
